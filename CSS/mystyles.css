@@ -25,10 +25,17 @@ img{
     height: 100px ;
 }
 
-li:nth-child(even) {
+.class:nth-child(even) {
     background-color: lightblue;
 }
 
 a:hover {
     background-color: lightcoral;
 }
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
