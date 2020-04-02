@@ -49,13 +49,13 @@ a img {
 }
 
 a img:hover{
-    animation-name: flag;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+   /* animation-name: flag;
+    animation-duration: 3s;*/
+    animation: flag 3s forwards;
 }
 
 @keyframes flag{
     0%{top: 25px}
-    100%{top: 75px;}
+    100%{top: 50px;}
     
 }
