@@ -35,21 +35,25 @@ a:hover {
 
 nav {
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 body {
     background-color: lightsalmon;
 }
 
-a img {
+.flagimg {
     width: 50px;
     height: 25px;
-    position: fixed;
-    right: 0px;
 }
 
 button{
-    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    font-size: 20px;
 }
 
 div img{
@@ -64,17 +68,24 @@ div img{
 
 .box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-a img:hover
-{
-    animation: flag 3s forwards;
-    
+.lorem{
+    font-size: 50px;
 }
 
-@keyframes flag
-{
-    0%{top: 25px}
-    100%{top: 75px;}
+.languageselector{
+    position: relative;
+
+}
+
+.hiddenflag{
+    position: absolute;
+    transition: transform 2s;
+}
+
+.languageselector:hover .hiddenflag{
+    transform: translateY(100%);
 }
