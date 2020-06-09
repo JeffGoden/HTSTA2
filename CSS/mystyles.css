@@ -38,6 +38,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: blue;
 }
 
 body {
@@ -88,4 +89,19 @@ div img{
 
 .languageselector:hover .hiddenflag{
     transform: translateY(100%);
+}
+
+@media screen and (max-width: 1000px){
+    nav{
+        position: fixed;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        width: 170px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;   
+    }
 }
