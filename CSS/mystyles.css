@@ -38,7 +38,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
+    background-color: rgb(231, 100, 52);
 }
 
 body {
@@ -89,6 +89,15 @@ div img{
 
 .languageselector:hover .hiddenflag{
     transform: translateY(100%);
+}
+
+.active{
+    background-color: chocolate;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1000px){
