@@ -1,16 +1,16 @@
-function AddSomeThings()
+var boxColor= "redBox";
+
+function changeBox()
 {
-    let result = 0;
+    if(boxColor =="redBox")
+    {
+        boxColor= "blueBox";
+    }
+    else
+    {
+        boxColor="redBox"; 
+    }
 
-    let myFirstElement = document.getElementById("FirstInput");
-    let mySecoondElement = document.getElementById("SecondInput");
-    // read here :
-    // https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/
-    // and convert myFirstElement.value into a number x
-    // do the same for mySecondElement y
-
-    //add into the result:
-    // result = x + y;
-
-    alert(result);
+    myNewDiv = "<div class='boxSize " + boxColor + "'></div>";
+    document.getElementById("resultingDiv").innerHTML= myNewDiv;
 }

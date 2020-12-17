@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='first.js'></script>
+    <script src='boxes.js'></script>
     <style>
-        .boxSize{
-            width: 10px;
-            height: 10px;
-        }
-        .redBox{
-            background-color: red;
+        .boxes{
+            width: 100px;
+            height: 100px;
         }
 
-        .blueBox{
-            background-color: blue;
+        .redbox{
+            background-color: red;
         }
-    
+        
+        .bluebox{
+            background-color: blue
+        }
+
+        .greenbox{
+            background-color: green;
+        }
     </style>
 </head>
-<body>
-    <div id="resultingDiv"></div>
-    <button onclick="changeBox()">Something</button>
+<body id="boxbody">
+    <input id="inputbox">
+    <button onclick="box();">click me</button>
 </body>
 </html>
